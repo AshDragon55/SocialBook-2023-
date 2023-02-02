@@ -4,5 +4,5 @@ import *as booststrap from 'bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import './main.html';
-import '../imports/layout.js'
+import '../lib/collections.js'
 import '../imports/layout.js'

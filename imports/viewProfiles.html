@@ -1,11 +1,13 @@
 <template name="viewProfiles">
     <div class="row">
+        {{#each profiles}}
         <div class="col-lg-4 text-center">
             <div class="border border-2 border-primary m-3 p-3" >
                     <img src="Avatar.jpg" alt="">
-                    <p>Bob Parker, 30</p>
-                    <p>Planet, Earth</p>
+                    <p>{{first}} {{surname}}, {{age}}</p>
+                    <p>{{address}}</p>
             </div>
         </div>
+        {{/each}}
     </div>
 </template>
