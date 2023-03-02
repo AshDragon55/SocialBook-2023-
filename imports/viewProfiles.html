@@ -1,13 +1,25 @@
 <template name="viewProfiles">
-    <div class="row">
-        {{#each profiles}}
-        <div class="col-lg-4 text-center">
-            <div class="border border-2 border-primary m-3 p-3" >
-                    <img src="Avatar.jpg" alt="">
-                    <p>{{first}} {{surname}}, {{age}}</p>
-                    <p>{{address}}</p>
+    <div class="modal modal-lg" tabindex="-1" id="viewModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <img id="viewProfile" src="Avatae.jpg" alt="" width="100px" height="100px">
+                        </div>
+                        <div class="col-lg-8">
+                            <p class="fs-1" id="viewName">Dio Brando</p>
+                            <p class="fs-3" id="viewAge">Age: 100</p>
+                            <p class="fs-5" id="viewLocation">location: The World</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        {{/each}}
     </div>
+
 </template>
