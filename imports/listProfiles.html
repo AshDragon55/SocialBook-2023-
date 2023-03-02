@@ -6,6 +6,7 @@
                 <div class="col-lg-10 imgFrame overflow-hidden">
                     <img class="w-100" src="{{profile}}" alt="">
                 </div>
+                {{> starsRating id=_id class='myRating' mutable=true rating=rating size=40}}
                 <p class="fs-3">{{first}} {{surname}}, {{age}}</p>
                 <i class="bi bi-binoculars js-view"></i>
                 <i class="bi bi-file-earmark-x js-delete"></i>
