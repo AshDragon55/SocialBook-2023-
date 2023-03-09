@@ -1,0 +1,35 @@
+<template name="createUserForm">
+    <div class="modal fade" tabindex="-1" id="createUserModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Create New User</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-username">@</span>
+                        <input type="text" class="form-control" placeholder="Username" aria-label="Username"
+                            aria-describedby="basic-username" id="nu-Name">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-password">@</span>
+                        <input type="password" class="form-control" placeholder="Password" aria-label="Password"
+                            aria-describedby="basic-password" id="nu-password">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-confirmPassword">@</span>
+                        <input type="confirmPassword" class="form-control" placeholder="confirmPassword" aria-label="confirmPassword"
+                            aria-describedby="basic-confirmPassword" id="nu-confirmPassword">
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary js-createUser">Create User</button>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</template>
